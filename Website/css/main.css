@@ -89,6 +89,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
 .page-width {
     width: auto;
     padding: 0 1em;
@@ -104,8 +106,17 @@ body {
     float: left;
 }
 
-.pull-left .ul{
-color: #222;
+.smc 
+{
+ float: right;
+
+	
+	width:40%;	
+}
+
+.pull-left ul{
+background: #eee;
+    color: #222;
     font-family: 'Open Sans', sans-serif;
     }
 
@@ -226,6 +237,12 @@ p.intro {
     padding-bottom: 0.2em;
 }
 
+#meter ul li {
+width: 22em;
+    color: #6D7B8D ;
+    }
+
+
 .time-left {
     text-align: right;
     font-weight: 300;
@@ -292,7 +309,27 @@ a.donate {
     padding: 0.15em 0;
     margin-top: 0em;
     border-bottom-right-radius: 0.425em;
-    border-bottom-left-radius: 0.425em;
+    border-bottom-left-radius: 0.425em;    
+    -webkit-box-shadow: 0 0.1em 0.1em #ddd;
+    box-shadow: 0 0.1em 0.1em #ddd;
+    text-decoration: none;
+}
+a.donate2 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #96C8A2;
+    color: #A34041;
+    font-weight: 300;
+    border: none;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding: 0.15em 0.15em 0.15em 0.15em;
+    margin-top: 0em;
+    border-bottom-right-radius: 0.425em;
+    border-bottom-left-radius: 0.425em;    
+    border-top-left-radius: 0.425em;
+    border-top-right-radius: 0.425em;
     -webkit-box-shadow: 0 0.1em 0.1em #ddd;
     box-shadow: 0 0.1em 0.1em #ddd;
     text-decoration: none;
@@ -320,7 +357,7 @@ a.donate:hover {
     
 }
 
-#pull-left ul
+#pull-left p ul li
 {
 	color: #222;
 	font-family: 'Open Sans', sans-serif;
@@ -536,5 +573,21 @@ h2,h3 {
     page-break-after: avoid;
 }
 
+}
+
+#gBtn {
+    padding: 5px;
+    background: transparent no-repeat;
+    cursor: pointer;
+    line-height: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    
+}
+#gBtn:hover {
+    background-color: #cc3732;
+    color: #fff;
+    border: 1px solid #dd4b39;
+    
 }
 
