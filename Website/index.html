@@ -11,12 +11,12 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!--[if IE 7]>
         <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css">
         <![endif]-->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -59,17 +59,18 @@
                     <a href="http://www.indiegogo.com/projects/keep-diaspora-service-at-poddery-com-live" class="donate">Donate Now</a>
                 </aside>
             </article>
+            <div class="clearfix"></div>
+            <article class="page-width" id="video">
+                <iframe width="425" height="349" src="http://www.youtube.com/embed/_A5tZPWLB2U?vq=hd1080" frameborder="0" allowfullscreen></iframe>
+            </article>
             <hr class="divide" />
-
             <!-- What is this all about? -->
             <article id="what" class="info page-width">
-                <div class="pull-left">
                     <hgroup>
                         <h1>What is this all about?</h1>
                         <h2>an attempt to preserve something</h2>
                     </hgroup>
                     <p align="justify">Poddery.com, one of the earliest <a href="http://en.wikipedia.org/wiki/Diaspora_%28social_network%29" style="text-decoration: none">diaspora social networking host</a> is scheduled to close on June 30th, 2013. We want to save this pod.
-                    
 
     Diaspora  is a culture. A culture against the loss of personal privacy by the  corporate social network giants. Diaspora enables us to keep one's data  with himself/herself and provides the flexibility to select the  shareable data. When the data is stored in his/her local machines and  not on a single central server, it provides the utmost security to  users.
 
@@ -82,19 +83,7 @@
     This campaign is trying to prevent this calamity and protect the diversity. To prevent poddery from closing down so as to refuel the diaspora idea.
 
     We are planning to adopt poddery.com from its current guardian and host it ourselves. Poddery.com has 5060 estimated users as per <a href="https://diasp.eu/stats.html" style="text-decoration: none">diasp.eu statistics</a>.
-
-
-                    
                     </p>
-                </div>
-
-                 <aside id="video" class="pull-right">
-
-
-                               
-
-				<iframe width=480em height=270em src="http://www.youtube.com/embed/_A5tZPWLB2U" frameborder="0" allowfullscreen></iframe></div>
-</aside>
             </article>
             <div class="clearfix"></div>
             <hr class="divide" />
@@ -464,10 +453,16 @@ If we do not reach the goal, we will use whatever amount we got to extend the li
         </footer>
 
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+ba        <script src="js/jquery.fitvids.js"></script>
+        <script>
+          $(document).ready(function(){
+            $("#video").fitVids();
+          });
+        </script>
 
 <!--  Replace this with something like piwik? -->
 

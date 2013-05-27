@@ -342,19 +342,14 @@ a.donate:hover {
 /* Video */
 
 #video {
-    width: 30em;
-    height: 17em;
-    background: #555;
-    border: 1em solid #ddd;
-    height: #000;
-    margin-bottom: 2.8em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
-
 
 /* paragraph before video*/
 #what p {
-    width: 30em;
-    
+    width: 100%;
+    letter-spacing: normal;
 }
 
 #pull-left p ul li
