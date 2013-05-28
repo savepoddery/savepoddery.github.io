@@ -87,6 +87,7 @@ body {
     background: #eee;
     color: #222;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -106,19 +107,9 @@ body {
     float: left;
 }
 
-.smc 
-{
- float: right;
-
-	
-	width:40%;	
-}
-
 .pull-left ul{
-background: #eee;
     color: #222;
-    font-family: 'Open Sans', sans-serif;
-    }
+}
 
 hr.divide {
     border-top: 0.0625em solid #fbfbfb;
@@ -309,13 +300,14 @@ a.donate {
     padding: 0.15em 0;
     margin-top: 0em;
     border-bottom-right-radius: 0.425em;
-    border-bottom-left-radius: 0.425em;    
+    border-bottom-left-radius: 0.425em;
     -webkit-box-shadow: 0 0.1em 0.1em #ddd;
     box-shadow: 0 0.1em 0.1em #ddd;
     text-decoration: none;
 }
 a.donate2 {
-    width: 100%;
+    width: 10em;
+    height: 5em;
     display: block;
     text-align: center;
     background-color: #96C8A2;
@@ -323,11 +315,11 @@ a.donate2 {
     font-weight: 300;
     border: none;
     font-size: 1.3em;
-    line-height: 1.5em;
+    line-height: 5em;
     padding: 0.15em 0.15em 0.15em 0.15em;
     margin-top: 0em;
     border-bottom-right-radius: 0.425em;
-    border-bottom-left-radius: 0.425em;    
+    border-bottom-left-radius: 0.425em;
     border-top-left-radius: 0.425em;
     border-top-right-radius: 0.425em;
     -webkit-box-shadow: 0 0.1em 0.1em #ddd;
@@ -382,8 +374,25 @@ a.donate:hover {
 #who .person img {
     width: 6em;
     height: 6em;
-    }
+}
 
+#perks .pull-right{
+    margin-top: 6em;
+    margin-right: 8em;
+}
+
+#smc {
+    float: right;
+    text-align: right;
+}
+
+b {
+    font-weight: 400;
+}
+
+article.info p {
+    letter-spacing: normal;
+}
 /* Footer*/
 
 footer:before {
