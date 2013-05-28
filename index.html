@@ -36,7 +36,7 @@
                         <li><a href="#who">Who are we?</a></li>
                         <li><a href="#impact">The Impact</a></li>
                         <li><a href="#needs">What we want?</a></li>
-                        <li><a href="#perks">What you get?</a></li>                        
+                        <li><a href="#perks">What you get?</a></li>
                         <li><a href="#spread">Spread the word</a></li>
                     </ul>
                 </nav>
@@ -45,7 +45,7 @@
         <section id="main">
             <!-- Introduction -->
             <article id="intro"  class="page-width">
-                <p class="intro pull-left"><span class="text">Help us keep diaspora live at</span> <span class="red">poddery.com</span></p>
+                <p class="intro pull-left">Help us keep diaspora live at poddery.com</p>
                 <aside id="meter" class="pull-right">
                     <div class="wrap">
                         <p class="time-left"><i class="icon-time"></i> <span><img src="img/loader.gif" alt="Loading..." /></span></p>
@@ -110,8 +110,10 @@
                     </div>
 
                     <div class="person">
- 			<wrap>	
+
+ 			<wrap>
 		  		<a href="https://joindiaspora.com/u/akshayramesh"/><img src="Team/akshay.png" alt="Akshay"></a>
+
                     		</img>
                     	</wrap>
                     </div>
@@ -152,7 +154,7 @@
 		  		<a href="https://joindiaspora.com/u/jay_aurabind"><img src="Team/Aurobindonew.png" alt="Aurabindo"></a>
                     		</img>
                     	</wrap>
-                    </div>                    
+                    </div>
                     <div class="person">
 		 	<wrap>
 		  		<a href="https://joindiaspora.com/u/balasankarc"><img src="Team/balu.png" alt="Balasankar"></a>
@@ -344,7 +346,7 @@
                     </p>
                    </div>
                 <div class="pull-right">
-                    <a href="http://www.indiegogo.com/projects/keep-diaspora-service-at-poddery-com-live" class="donate2" width=30>Donate Now</a>
+                    <a href="http://www.indiegogo.com/projects/keep-diaspora-service-at-poddery-com-live" class="donate variant">Donate Now</a>
                 </div>
             <div class="clearfix"></div>
             <div id="smc">
@@ -411,7 +413,7 @@
 				</img>
 			</a>
 
-	
+
 </aside>
 			<hgroup>
                         <h1>Share</h1>
@@ -420,8 +422,8 @@
 
 
                     </p>
-                    
-                    
+
+
 
                      <a href="http://sharetodiaspora.github.com/?title=Save Poddery Campaign&url=http://www.savepoddery.com/ #savepoddery" onclick="javascript:window.open(this.href,
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
@@ -433,23 +435,23 @@
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
   src="images/g+.jpg"  alt="Share on Google+"/></a>
 &nbsp;&nbsp;&nbsp;&nbsp;
-                                  
+
                         <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwww.savepoddery.com%2F&related=savepoddery&text=Help%20us%20keep%20diaspora%20live%20at%20poddery.com%20-%20%20Join%20us%20at%20www.savepoddery.com%20%20%23savepoddery&tw_p=tweetbutton&url=www.savepoddery.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
   src="images/t.jpg"  alt="Share on Twitter"/></a>
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-    
-    
+
+
     <a href="http://www.facebook.com/sharer.php?u=www.savepoddery.com&t=Join Save Poddery Campaign" onclick="javascript:window.open(this.href,
   '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
   src="images/facebook.jpg"  alt="Share on Facebook"/></a>
-    
-    
+
+
 <br />
 
 
-    
+
     &nbsp;&nbsp;&nbsp;&nbsp;
 
     <br />
@@ -470,23 +472,33 @@
 
             </article>
             <div class="clearfix"></div>
-            <hr class="divide" />
+
+            <footer>
+                <p>an initiative by diaspora community and supported by <a href="http://helloinfinity.com">HelloInfinity</a></p><br/>
+            </footer>
         </section>
 
-        <footer>
-            <p>an initiative by diaspora community and supported by <a href="http://helloinfinity.com">HelloInfinity</a></p><br/>
-            
-        </footer>
-
+        <a style="position: fixed; bottom:5px;right:5px;" id="backtotop" href="#" title="Back to Top"><img style="border: none;" src="images/backtotop.jpg"/></a>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.fitvids.js"></script>
+        <script src="js/vendor/jquery.smooth-scroll.js"></script>
         <script>
           $(document).ready(function(){
             $("#video").fitVids();
+            $('a').smoothScroll();
+
+            $(window).scroll(function(){
+                if($(window).scrollTop()>100) {
+                    $('#backtotop').show();
+                }
+                else {
+                    $('#backtotop').hide();
+                }
+            })
           });
         </script>
 
@@ -499,6 +511,5 @@
         //     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
         //     s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
-        <a style="position: fixed; bottom:5px;right:5px;" href="#" title="Back to Top"><img style="border: none;" src="images/backtotop.jpg"/></a>
     </body>
 </html>
