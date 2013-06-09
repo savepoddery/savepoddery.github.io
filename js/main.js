@@ -11,7 +11,7 @@ $(document).ready(function() {
               meter = $('#meter');
           try {
             var extracted_content = $(data.contents).find('.targets'),
-                regex = '([0-9]*\,?[0-9]+|[0-9]+\,?[0-9]*)';
+                regex = '([0-9.]*\,?[0-9]+|[0-9]+\,?[0-9]*)';
 
             money_raised =$('#big-goal.money-raised',extracted_content)
                                                                 .text()
