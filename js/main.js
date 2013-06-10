@@ -22,7 +22,7 @@ $(document).ready(function() {
                                                               .match(regex)[0];
 
             time_left = $('.days-left',extracted_content).html();
-            progress_width = parseFloat(money_raised.replace(',',''))/parseFloat(money_goal.replace(',',''))*100+"%";
+            progress_width = parseFloat(money_raised.replace('.',''))/parseFloat(money_goal.replace('.',''))*100+"%";
 
           } catch(e) {
           }
