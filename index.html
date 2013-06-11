@@ -516,16 +516,16 @@
         <script src="js/jquery.fitvids.js"></script>
         <script src="js/vendor/jquery.smooth-scroll.js"></script>
         <script>
-          €(document).ready(function(){
-            €("#video").fitVids();
-            €('a').smoothScroll();
+          $(document).ready(function(){
+            $("#video").fitVids();
+            $('a').smoothScroll();
 
-            €(window).scroll(function(){
-                if(€(window).scrollTop()>100) {
-                    €('#backtotop').show();
+            $(window).scroll(function(){
+                if($(window).scrollTop()>100) {
+                    $('#backtotop').show();
                 }
                 else {
-                    €('#backtotop').hide();
+                    $('#backtotop').hide();
                 }
             })
           });
