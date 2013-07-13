@@ -16,13 +16,16 @@ $(document).ready(function() {
             money_raised =$('#big-goal.money-raised',extracted_content)
                                                                 .text()
                                                                 .match(regex)[0];
+			 money_raised=parseFloat(money_raised)+20.458;
+
+			
 
             money_goal = $('.money-raised.goal',extracted_content)
                                                               .text()
                                                               .match(regex)[0];
 
             time_left = $('.days-left',extracted_content).html();
-            progress_width = parseFloat(money_raised.replace('.',''))/parseFloat(money_goal.replace('.',''))*100+"%";
+            progress_width = parseFloat(money_raised/parseFloat(money_goal.replace('.','')))*100+"%";
 
           } catch(e) {
           }
