@@ -16,7 +16,7 @@ $(document).ready(function() {
             money_raised =$('#big-goal.money-raised',extracted_content)
                                                                 .text()
                                                                 .match(regex)[0];
-			 money_raised=parseFloat(money_raised)+20.458;
+			 money_raised=parseFloat(money_raised)+45.007;
 
 			
 
