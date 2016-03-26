@@ -1,3 +1,1 @@
-# Save Poddery.com campaign website
-
-This repo contains savepoddery.com code and inkscape mockup
+Moved to https://git.fosscommunity.in/community/save.poddery.com 
